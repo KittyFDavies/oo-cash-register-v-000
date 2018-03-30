@@ -16,6 +16,7 @@ class CashRegister
     if quantity > 1
       counter = 0
       until counter == quantity
+        binding.pry
         @array << title
         counter += 1
       end

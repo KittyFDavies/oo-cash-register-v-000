@@ -11,6 +11,7 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
+    @array = []
     @total += price * quantity
     counter = 0
     until counter ==quantity

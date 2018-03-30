@@ -14,9 +14,13 @@ class CashRegister
     @array = []
     @total += price * quantity
     counter = 0
-    until counter ==quantity
+    if quantity == 1
       @array << title
-      counter += 1
+    else
+      until counter ==quantity
+        @array << title
+        counter += 1
+      end
     end
   end
 

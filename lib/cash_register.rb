@@ -6,6 +6,7 @@ class CashRegister
   def initialize(apply_discount = 0)
     @total = 0
     @discount = @total + apply_discount
+    @array = []
   end
 
   def total
@@ -13,7 +14,6 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-    @array = []
     @total += price * quantity
     if quantity > 1
       counter = 0

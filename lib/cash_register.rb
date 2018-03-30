@@ -19,8 +19,8 @@ class CashRegister
       puts "There is no discount to apply"
     else
       @total = @total * 0.8
+      @total
       puts "After the discount, the total comes to $#{@total}."
-      binding.pry
     end
   end
 

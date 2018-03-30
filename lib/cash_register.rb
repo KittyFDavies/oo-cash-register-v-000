@@ -20,7 +20,7 @@ class CashRegister
     else
       @total = @total * 0.8
       @total
-      "After the discount, the total comes to $#{@total}."
+      "After the discount, the total comes to $#{@total.round}."
     end
   end
 
